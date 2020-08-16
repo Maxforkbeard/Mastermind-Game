@@ -23,7 +23,7 @@ import sys
 import time
 
 #lopper for the BOOM
-looper =0
+looper = 0
 
 #fastprint
 def fastprint(s):
@@ -54,6 +54,7 @@ def slowprinting(s):
     sys.stdout.flush()
     time.sleep(1./8)
 
+#slowestprint
 def slowestprint(s):
   for c in s + '\n':
     sys.stdout.write(c)
@@ -176,6 +177,7 @@ if yesorno == 1:
  else:
    slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
    slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
+   time.sleep(4)
    clear() 
    print("________   ________  ________    ___       ___  ")
    print("|      /   |      |  |      |    |  \     /   | ")
@@ -203,6 +205,7 @@ else:
   clear()
   slowestprint("...1")
   slowprint("This may hurt your eyes")
+  time.sleep(1)
   while looper == 0:
    clear()
    print("________   ________  ________    ___       ___  ")
