@@ -135,13 +135,13 @@ if yesorno == 1:
        wrong2 = 0
        wrong2 = str(wrong2)
 
-       if guess3 == secret3:
-         wrong3 = secret3
-         wrong3 = str(wrong3)
-       else:
-         wrong3 = str(wrong3)
-         wrong3 = 0
-         wrong3= str(wrong3)
+     if guess3 == secret3:
+       wrong3 = str(wrong3)
+       wrong3 = 0
+       wrong3= str(wrong3)
+     else:
+       wrong3 = secret3
+       wrong3 = str(wrong3)
 
      if guess4 == secret4:
        wrong4 = secret4
@@ -175,7 +175,7 @@ if yesorno == 1:
      guess4 = int(guess4)
  else:
    slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
-   slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed bcak, and I will continue to imporve on it. Goodbye")
+   slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
    clear() 
    print("________   ________  ________    ___       ___  ")
    print("|      /   |      |  |      |    |  \     /   | ")
