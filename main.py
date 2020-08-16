@@ -73,7 +73,7 @@ print("")
 slowprint("S.A.F.E.S, is a code that means, Super Anialating Fenel, Easialy Sacriligious")
 slowprinting("Are you up for the challange?")
 slowprint("Please type 1 for yes, and 2 for no")
-slowprint("Anything other input will have you terminated!")
+slowprint("Any other input will have you terminated!")
 
 yesorno = input()
 yesorno = int(yesorno)
