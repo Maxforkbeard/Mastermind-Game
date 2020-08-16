@@ -137,7 +137,7 @@ if yesorno == 1:
 
      if guess3 == secret3:
        wrong3 = str(wrong3)
-       wrong3 = 0
+       wrong3 = secret3
        wrong3= str(wrong3)
      else:
        wrong3 = 0
