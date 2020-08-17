@@ -84,7 +84,6 @@ if yesorno == 1:
  clear()
  slowprint("Welcome to S.A.F.E.S.")
  slowprint("You have to guess a number from 1 to 9 (0 means its wrong)")
- slowprint("You will have 12 guesses, on your 13th, it will be locked forever to you, and you will not be able to get in.")
  guess = int(input("Guess the first digit: "))
  guess2 = int(input("Guess the second digit: "))
  guess3 = int(input("Guess the third digit: "))
@@ -108,7 +107,7 @@ if yesorno == 1:
  else:
   numguesses = 0
    
- while numguesses < 13:
+ for l = 1 to 10
    while guessmain != secretmain:
      numguesses = numguesses + 1
      print ("wrong numbers") 
@@ -185,8 +184,6 @@ if yesorno == 1:
      print("|-----|    |      |  |      |    |   \   /    | ")
      print("|      \   |      |  |      |    |    ___     | ")
      print("________   ________  ________    |            | ")
- else:
-   slowprint("I'm sorry, you have run out of guesses, you are not a S.A.F.E.S. cracking genius. That is sad and you should feel ashamed (Its really not that hard). This safe is closed to you, and you will never be able to open this. Thankyou forplaying, and please try again, I'm sure you will do better next time.")
 
 
 elif yesorno == 2:
