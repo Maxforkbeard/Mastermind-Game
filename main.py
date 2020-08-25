@@ -107,18 +107,18 @@ if yesorno == 1:
  else:
   numguesses = 0
    
- for l = 1 to 10
-   while guessmain != secretmain:
-     numguesses = numguesses + 1
-     print ("wrong numbers") 
 
-     if guessmain != secretmain:
-       wrong1 = 0
-       wrong2 = 0
-       wrong3 = 0
-       wrong4 = 0
-       wrongmain = 0
-       wrongmain = str(wrongmain)
+ while numguesses < 12:
+   numguesses = numguesses + 1
+   print ("wrong numbers") 
+
+   if guessmain != secretmain:
+     wrong1 = 0
+     wrong2 = 0
+     wrong3 = 0
+     wrong4 = 0
+     wrongmain = 0
+     wrongmain = str(wrongmain)
 
      if guess == secret1:
        wrong1 = secret1
@@ -174,16 +174,25 @@ if yesorno == 1:
      guess2 = int(guess2)
      guess3 = int(guess3)
      guess4 = int(guess4)
-   else:
-     slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
-     slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
-     time.sleep(4)
-     clear() 
-     print("________   ________  ________    ___       ___  ")
-     print("|      /   |      |  |      |    |  \     /   | ")
-     print("|-----|    |      |  |      |    |   \   /    | ")
-     print("|      \   |      |  |      |    |    ___     | ")
-     print("________   ________  ________    |            | ")
+
+     if guessmain == secretmain:
+       guessmain = 13
+
+ if guessmain == 12:
+   clear()
+   slowprint("I'm sorry but you have run out of guesses")
+   slowprint("I hope you will retry and get the right answers now, or else, this glorious nation will be doomed FOREVER.")
+
+ else:
+   slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
+   slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
+   time.sleep(4)
+   clear() 
+   print("________   ________  ________    ___       ___  ")
+   print("|      /   |      |  |      |    |  \     /   | ")
+   print("|-----|    |      |  |      |    |   \   /    | ")
+   print("|      \   |      |  |      |    |    ___     | ")
+   print("________   ________  ________    |            | ")
 
 
 elif yesorno == 2:
