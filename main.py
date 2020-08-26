@@ -192,7 +192,8 @@ if yesorno == 1:
    clear()
    slowprint("I'm sorry but you have run out of guesses")
    slowprint("I hope you will retry and get the right answers now, or else, this glorious nation will be doomed FOREVER.")
-
+   
+#Redundency 101
  else:
   slowprint("If you can access this there is something wrong with the earth and you, The Matrix is falling apart")
 
