@@ -105,11 +105,10 @@ if yesorno == 1:
  if (guess == secret1) and (guess2 == secret2) and (guess3 == secret3) and (guess4 == secret4) :
    print("fluke")
  else:
-  numguesses = 0
+  numguesses = 1
    
 
- while numguesses < 12:
-   numguesses = numguesses + 1
+ while numguesses < 12: 
    print ("wrong numbers") 
 
    if guessmain != secretmain:
