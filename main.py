@@ -105,12 +105,13 @@ if yesorno == 1:
  if (guess == secret1) and (guess2 == secret2) and (guess3 == secret3) and (guess4 == secret4) :
    print("fluke")
  else:
-  numguesses = 1
+  numguesses = 0
    
 
  while numguesses < 12: 
    print ("wrong numbers") 
-
+   numguesses = numguesses + 1
+   numguesses = int(numguesses)
    if guessmain != secretmain:
      wrong1 = 0
      wrong2 = 0
@@ -175,14 +176,8 @@ if yesorno == 1:
      guess4 = int(guess4)
 
      if guessmain == secretmain:
-       guessmain = 13
-
- if guessmain == 12:
-   clear()
-   slowprint("I'm sorry but you have run out of guesses")
-   slowprint("I hope you will retry and get the right answers now, or else, this glorious nation will be doomed FOREVER.")
-
- else:
+       numguesses == 100
+ if numguesses > 50:
    slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
    slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
    time.sleep(4)
@@ -193,14 +188,24 @@ if yesorno == 1:
    print("|      \   |      |  |      |    |    ___     | ")
    print("________   ________  ________    |            | ")
 
+ elif numguesses == 12:
+   clear()
+   slowprint("I'm sorry but you have run out of guesses")
+   slowprint("I hope you will retry and get the right answers now, or else, this glorious nation will be doomed FOREVER.")
+
+ else:
+  slowprint("If you can access this there is something wrong with the earth and you, The Matrix is falling apart")
+
 
 elif yesorno == 2:
-  clear()
-  slowprint("Are you sure?")
-  slowprint("Please type 1 for yes, and 2 for no")
-  slowprint("Anything other input will have you terminated!")
-  UselessAnswer = input()
-  UselessAnswer = int(UselessAnswer)
+  k = 0
+  while k == 0:
+   clear()
+   slowprint("Are you sure?")
+   slowprint("Please type 1 for yes, and 2 for no")
+   slowprint("Anything other input will have you terminated!")
+   UselessAnswer = input()
+   UselessAnswer = int(UselessAnswer)
 
 else:
   clear()
