@@ -177,6 +177,7 @@ if yesorno == 1:
 
      if guessmain == secretmain:
        numguesses == 100
+  
  if numguesses > 50:
    slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
    slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
@@ -192,10 +193,10 @@ if yesorno == 1:
    clear()
    slowprint("I'm sorry but you have run out of guesses")
    slowprint("I hope you will retry and get the right answers now, or else, this glorious nation will be doomed FOREVER.")
-   
-#Redundency 101
+
+ #Redundency 101
  else:
-  slowprint("If you can access this there is something wrong with the earth and you, The Matrix is falling apart")
+   slowprint("If you can access this there is something wrong with the earth and you, The Matrix is falling apart")
 
 
 elif yesorno == 2:
