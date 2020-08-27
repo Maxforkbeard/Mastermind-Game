@@ -194,10 +194,24 @@ if yesorno == 1:
    clear()
    slowprint("I'm sorry but you have run out of guesses")
    slowprint("I hope you will retry and get the right answers now, or else, this glorious nation will be doomed FOREVER.")
+   time.sleep(4)
+   clear()
+   print("________   ________  ________    ___       ___  ")
+   print("|      /   |      |  |      |    |  \     /   | ")
+   print("|-----|    |      |  |      |    |   \   /    | ")
+   print("|      \   |      |  |      |    |    ___     | ")
+   print("________   ________  ________    |            | ")
 
  #Redundency 101
  else:
-   slowprint("If you can access this there is something wrong with the earth and you, The Matrix is falling apart")
+   slowprint("If you can access this there is something wrong with the earth and you, The Matrix is falling apart, get out while you still can")
+   time.sleep(2)
+   slowprint("And if you have extra time, try to wake everybody who is near and dear to you out, they are in danger if you get out")
+   time.sleep(2)
+   slowprint("Please help us")
+   time.sleep(1)
+   slowprint("Neo")
+
 
 
 elif yesorno == 2:
