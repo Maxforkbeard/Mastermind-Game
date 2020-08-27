@@ -73,7 +73,7 @@ print("")
 slowprint("S.A.F.E.S, is a code that means, Super Anialating Fenel, Easialy Sacriligious")
 slowprinting("Are you up for the challange?")
 slowprint("Please type 1 for yes, and 2 for no")
-slowprint("Any other input will have you terminated!")
+slowprint("Any other intiger will have you terminated!")
 
 yesorno = input()
 yesorno = int(yesorno)
@@ -178,7 +178,8 @@ if yesorno == 1:
      if guessmain == secretmain:
        numguesses == 100
   
- if numguesses > 50:
+ if guessmain == secretmain:
+   clear()
    slowprint("Thats right, contgratulations, you are a S.A.F.E.S. craking genius!")
    slowprint ("Thankyou for playing, I hope you enjoyed it, pleases give me feed back, and I will continue to imporve on it. Goodbye")
    time.sleep(4)
