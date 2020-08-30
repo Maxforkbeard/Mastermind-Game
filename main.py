@@ -97,7 +97,6 @@ if yesorno == 1:
  guessmain = guess + guess2 + guess3 +guess4
  guessmain = int(guessmain)
  guess = int(guess)
-  
  guess2 = int(guess2)
  guess3 = int(guess3)
  guess4 = int(guess4)
@@ -154,7 +153,7 @@ if yesorno == 1:
     
 
      wrongmain = wrong1 + wrong2 + wrong3 + wrong4
-     wrongmain = int(wrongmain)
+     wrongmain = str(wrongmain)
      print("But you did get ", wrongmain, "digit(s) right (0  menas no, sorry for the inconvineience")
      guess = int(input("Guess the first digit: "))
      guess2 = int(input("Guess the second digit: "))
@@ -234,6 +233,7 @@ else:
   slowestprint("...2")
   clear()
   slowestprint("...1")
+  clear()
   slowprint("This may hurt your eyes")
   time.sleep(1)
   while looper == 0:
